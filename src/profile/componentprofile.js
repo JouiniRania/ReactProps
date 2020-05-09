@@ -5,7 +5,11 @@ const componentprofile = (props)=>{
 
       return(
         <div>
-    <p>{props.children}</p>
+            <p>{props.profile.fullname}</p>
+             <p>{props.profile.bio}</p>
+             <p>{props.profile.profession}</p>
+            
+    {props.children}
       </div>
       );
       }
